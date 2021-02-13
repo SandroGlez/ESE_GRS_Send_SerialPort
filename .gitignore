@@ -1,0 +1,8 @@
+#Listado de archivos ignorados
+ESE_GRS_Send_SerialPort.sdf
+ESE_GRS_Send_SerialPort.sln
+ESE_GRS_Send_SerialPort.v11.suo
+ESE_GRS_Send_SerialPort/ESE_GRS_Send_SerialPort.vcxproj
+ESE_GRS_Send_SerialPort/ESE_GRS_Send_SerialPort.vcxproj.filters
+ESE_GRS_Send_SerialPort/MyForm.resx
+ESE_GRS_Send_SerialPort/Debug
