@@ -2,6 +2,7 @@
 #include <iostream>
 #include <msclr\marshal.h>
 using namespace std;
+//Comente Sandro
 
 PuertoSerie::PuertoSerie()
 	:IsConectado(false)
@@ -36,14 +37,14 @@ void PuertoSerie::inicializa(const char* PuertoCom, unsigned long Velocidad)
 	if (handler==INVALID_HANDLE_VALUE)
 	{
 		error=true;
-	    errorstr="ERROR: CreateFile. Inicialización puerto serie";
+	    errorstr="ERROR: CreateFile. InicializaciÃ³n puerto serie";
 		return;
 	}
 	DCB ParametrosTxSerie;
 	if (!GetCommState(handler,&ParametrosTxSerie))
 	{
 		error=true;
-		errorstr="ERROR: GetCommState. Inicialización puerto serie";
+		errorstr="ERROR: GetCommState. InicializaciÃ³n puerto serie";
 		return;
 	}
 	ParametrosTxSerie.DCBlength=sizeof(DCB);
@@ -54,7 +55,7 @@ void PuertoSerie::inicializa(const char* PuertoCom, unsigned long Velocidad)
 	if(!SetCommState(handler,&ParametrosTxSerie))
 	{
 		error=true;
-		errorstr="ERROR: SetCommStatus. Inicialización puerto serie";
+		errorstr="ERROR: SetCommStatus. InicializaciÃ³n puerto serie";
 		return;
 	}
 	IsConectado=true;
